@@ -21,7 +21,6 @@ build:
         name: run gradle pmd
         code: |
           gradle pmd
-          cp /AndroidPlugins/build/reports/pmd/*.html $WERCKER_REPORT_ARTIFACTS_DIR
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
   after-steps:
        # Use the build results
@@ -31,3 +30,4 @@ build:
              ls -la AndroidPlugins/build/apk/
              cp AndroidPlugins/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
              cp /pipeline/build/AndroidPlugins/**/*.html $WERCKER_REPORT_ARTIFACTS_DIR
+             cp /AndroidPlugins/build/reports/pmd/*.html $WERCKER_REPORT_ARTIFACTS_DIR
