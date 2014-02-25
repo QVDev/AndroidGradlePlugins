@@ -1,7 +1,7 @@
 console.log('This would be the main JS file.');
 
 xhttp=new XMLHttpRequest();
-xhttp.open("GET","/reports/checkstyle.xml",false);
+xhttp.open("GET","reports/checkstyle.xml",false);
 xhttp.send();
 xmlDoc=xhttp.responseXML;
 
