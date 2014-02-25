@@ -6,7 +6,7 @@ xhttp.send();
 xmlDoc=xhttp.responseXML;
 
 totalerrors = xmlDoc.getElementsByTagName( "error" ).length;
-document.write(totalerrors, ' Errors<br><br>');
+document.write(totalerrors);
 
 // for (var i=0;i<totalerrors;i++)
 // { 

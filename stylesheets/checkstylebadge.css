@@ -1,0 +1,14 @@
+.numberCircle {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+
+    border: 2px solid #F00;
+    color: #F00;
+    text-align: center;
+
+    font: 32px Arial, sans-serif;
+}
