@@ -22,6 +22,7 @@ build:
         code: |
           gradle pmd
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+    - joemercer/gh-pages@0.2.1
   after-steps:
        # Use the build results
        - script:
