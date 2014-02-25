@@ -55,7 +55,7 @@ build:
              cp AndroidPlugins/build/reports/checkstyle/*.* $WERCKER_REPORT_ARTIFACTS_DIR
              ls -la AndroidPlugins/build/reports/findbugs/
              cp AndroidPlugins/build/reports/findbugs/*.* $WERCKER_REPORT_ARTIFACTS_DIR
-             ls -la AndroidPlugins/build/lint/codenarc/
-             cp AndroidPlugins/build/lint/codenarc/*.* $WERCKER_REPORT_ARTIFACTS_DIR
+             ls -la AndroidPlugins/build/reports/codenarc/
+             cp AndroidPlugins/build/reports/codenarc/*.* $WERCKER_REPORT_ARTIFACTS_DIR
              ls -la AndroidPlugins/build/lint/
              cp AndroidPlugins/build/lint/*.* $WERCKER_REPORT_ARTIFACTS_DIR
