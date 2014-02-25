@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.6">
+<file name="/pipeline/build/AndroidPlugins/src/main/java/com/qvdev/apps/examples/androidgradleplugins/androidplugins/MainActivity.java">
+<error line="25" column="18" severity="error" message="Name &apos;GetItems&apos; must match pattern &apos;^[a-z]([_a-zA-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+</file>
+<file name="/pipeline/build/AndroidPlugins/src/main/java/com/qvdev/apps/examples/androidgradleplugins/androidplugins/MainActivity.java">
+<error line="25" column="18" severity="error" message="Name &apos;GetItems&apos; must match pattern &apos;^[a-z]([_a-zA-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+</file>
+<file name="/pipeline/build/AndroidPlugins/src/main/java/com/qvdev/apps/examples/androidgradleplugins/androidplugins/MainActivity.java">
+<error line="25" column="18" severity="error" message="Name &apos;GetItems&apos; must match pattern &apos;^[a-z]([_a-zA-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+</file>
+<file name="/pipeline/build/AndroidPlugins/src/main/java/com/qvdev/apps/examples/androidgradleplugins/androidplugins/MainActivity.java">
+<error line="25" column="18" severity="error" message="Name &apos;GetItems&apos; must match pattern &apos;^[a-z]([_a-zA-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+</file>
+<file name="/pipeline/build/AndroidPlugins/src/main/java/com/qvdev/apps/examples/androidgradleplugins/androidplugins/MainActivity.java">
+<error line="25" column="18" severity="error" message="Name &apos;GetItems&apos; must match pattern &apos;^[a-z]([_a-zA-Z0-9]+)*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+</file>
+</checkstyle>
