@@ -22,6 +22,21 @@ build:
         code: |
           gradle pmd
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+    - script:
+        name: run gradle checkstyle
+        code: |
+          gradle pmd
+          gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+    - script:
+        name: run gradle findbugs
+        code: |
+          gradle pmd
+          gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
+    - script:
+        name: run gradle codenarc
+        code: |
+          gradle pmd
+          gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
   after-steps:
        # Use the build results
        - script:
