@@ -31,3 +31,9 @@ build:
              cp AndroidPlugins/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
              ls -la AndroidPlugins/build/reports/pmd/
              cp AndroidPlugins/build/reports/pmd/*.html $WERCKER_REPORT_ARTIFACTS_DIR
+  deploy:
+    steps:
+      - qvdev/gh-pages:
+          token: $GH_TOKEN
+          basedir: AndroidPlugins/build/reports/pmd
+          domain: qvdev.github.com
