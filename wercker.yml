@@ -22,7 +22,6 @@ build:
         code: |
           gradle pmd
           gradle --full-stacktrace -q --project-cache-dir=$WERCKER_CACHE_DIR build
-    - joemercer/gh-pages@0.2.1
   after-steps:
        # Use the build results
        - script:
@@ -32,9 +31,3 @@ build:
              cp AndroidPlugins/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
              ls -la AndroidPlugins/build/reports/pmd/
              cp AndroidPlugins/build/reports/pmd/*.html $WERCKER_REPORT_ARTIFACTS_DIR
-  deploy:
-    steps:
-      - qvdev/gh-pages:
-          token: $GH_TOKEN
-          basedir: AndroidPlugins/build/reports/pmd
-          domain: qvdev.github.com
