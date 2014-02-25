@@ -1,4 +1,8 @@
 apply plugin: 'android'
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: 'codenarc'
 
 android {
     compileSdkVersion 19
@@ -15,4 +19,54 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+task checkstyle(type: Checkstyle) {
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    // empty classpath
+    classpath = files()
+
+    //Do not fail build
+    ignoreFailures = true
+}
+
+task pmd(type: Pmd) {
+
+    source 'src'
+    include '**/*.java'
+    exclude '**/gen/**'
+
+    ruleSets = ["android"]
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+task findbugs(type: FindBugs) {
+    ignoreFailures = true
+    classes = fileTree('build/classes/debug/')
+    source = fileTree('src/main/java/')
+    classpath = files()
+    effort = 'max'
+}
+
+tasks.withType(FindBugs) {
+    excludeFilter = file("config/findbugs/excludeFilter.xml")
+
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}
+
+task codenarc(type: CodeNarc) {
+    source 'src/main/java'
+    configFile = file("config/codenarc/codenarc.xml")
 }
