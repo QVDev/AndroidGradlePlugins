@@ -29,4 +29,4 @@ build:
              ls -la AndroidPlugins/build/apk/
              cp AndroidPlugins/build/apk/*.apk $WERCKER_REPORT_ARTIFACTS_DIR
              cp /pipeline/build/AndroidPlugins/**/*.html $WERCKER_REPORT_ARTIFACTS_DIR
-             cp /AndroidPlugins//**/*.html $WERCKER_REPORT_ARTIFACTS_DIR
+             cp /AndroidPlugins/**/*.html $WERCKER_REPORT_ARTIFACTS_DIR
