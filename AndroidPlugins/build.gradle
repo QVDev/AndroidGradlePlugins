@@ -69,4 +69,7 @@ tasks.withType(FindBugs) {
 task codenarc(type: CodeNarc) {
     source 'src/main/java'
     configFile = file("config/codenarc/codenarc.xml")
+    maxPriority1Violations = 10
+    maxPriority2Violations = 10
+    maxPriority3Violations = 10
 }
